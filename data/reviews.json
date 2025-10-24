@@ -1,0 +1,24 @@
+{
+  "google_rating": "4.8/5",
+  "total_reviews": "Based on Google Maps data",
+  "reviews": [
+    {
+      "author": "Local Patron",
+      "rating": 5,
+      "text": "Gemütliche Atmosphäre und freundlicher Service. Perfekt für einen entspannten Abend!",
+      "date": "2024"
+    },
+    {
+      "author": "Berlin Resident",
+      "rating": 5,
+      "text": "Great local bar in Lichtenberg. Good drinks and sports atmosphere!",
+      "date": "2024"
+    },
+    {
+      "author": "Sports Fan",
+      "rating": 4,
+      "text": "Tolle Sportbar mit guter Auswahl an Getränken. Immer eine nette Atmosphäre!",
+      "date": "2024"
+    }
+  ]
+}

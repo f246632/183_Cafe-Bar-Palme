@@ -1,0 +1,481 @@
+/* ============================================
+   Responsive Design
+   ============================================ */
+
+/* Tablet Landscape (1024px and below) */
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-title {
+        font-size: 3.5rem;
+    }
+
+    .about-content {
+        gap: 40px;
+    }
+
+    .menu-categories {
+        gap: 30px;
+    }
+
+    .location-content {
+        gap: 30px;
+    }
+
+    .contact-content {
+        gap: 40px;
+    }
+}
+
+/* Tablet Portrait (768px and below) */
+@media screen and (max-width: 768px) {
+    /* Navigation */
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-color: var(--bg-white);
+        flex-direction: column;
+        padding: 30px;
+        gap: 20px;
+        box-shadow: var(--shadow-md);
+        transition: var(--transition-smooth);
+        align-items: center;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .nav-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+
+    .nav-link {
+        font-size: 1.2rem;
+        padding: 10px 0;
+    }
+
+    /* Hero */
+    .hero-title {
+        font-size: 2.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Sections */
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
+    }
+
+    /* About */
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Menu */
+    .menu-categories {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .menu-category {
+        padding: 25px;
+    }
+
+    /* Gallery */
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    /* Reviews */
+    .reviews-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    /* Location */
+    .location-content {
+        grid-template-columns: 1fr;
+    }
+
+    .location-map iframe {
+        min-height: 350px;
+    }
+
+    /* Contact */
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    /* Lightbox */
+    .lightbox-close {
+        top: 15px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+
+    .lightbox-prev,
+    .lightbox-next {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+
+    .lightbox-prev {
+        left: 15px;
+    }
+
+    .lightbox-next {
+        right: 15px;
+    }
+
+    .lightbox-counter {
+        bottom: 15px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile (480px and below) */
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    /* Typography */
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.95rem;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 12px 24px;
+        font-size: 0.95rem;
+    }
+
+    /* Navigation */
+    .nav-brand h1 {
+        font-size: 1.5rem;
+    }
+
+    /* Hero */
+    .hero {
+        height: 80vh;
+    }
+
+    /* Section Spacing */
+    .section {
+        padding: 50px 0;
+    }
+
+    .section-header {
+        margin-bottom: 40px;
+    }
+
+    /* About */
+    .lead {
+        font-size: 1.1rem;
+    }
+
+    .feature-item {
+        padding: 20px;
+    }
+
+    .feature-icon {
+        font-size: 2rem;
+    }
+
+    .feature-item h3 {
+        font-size: 1rem;
+    }
+
+    .feature-item p {
+        font-size: 0.9rem;
+    }
+
+    /* Menu */
+    .menu-category {
+        padding: 20px;
+    }
+
+    .category-title {
+        font-size: 1.5rem;
+    }
+
+    .item-header h4 {
+        font-size: 1rem;
+    }
+
+    .price {
+        font-size: 1.1rem;
+    }
+
+    .item-description {
+        font-size: 0.85rem;
+    }
+
+    /* Gallery */
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .gallery-icon {
+        font-size: 2rem;
+    }
+
+    /* Reviews */
+    .review-card {
+        padding: 20px;
+    }
+
+    .review-stars {
+        font-size: 1rem;
+    }
+
+    .review-text {
+        font-size: 0.95rem;
+    }
+
+    .review-author {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    /* Location */
+    .info-card {
+        padding: 20px;
+    }
+
+    .info-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .location-map iframe {
+        min-height: 300px;
+    }
+
+    /* Contact */
+    .form-group input,
+    .form-group textarea {
+        padding: 12px;
+        font-size: 0.95rem;
+    }
+
+    .info-box {
+        padding: 20px;
+    }
+
+    .info-box h3 {
+        font-size: 1.1rem;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 40px 0 15px;
+    }
+
+    .footer-section h3 {
+        font-size: 1.1rem;
+    }
+
+    .footer-section p {
+        font-size: 0.9rem;
+    }
+
+    .social-links a {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    /* Back to Top */
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+    }
+}
+
+/* Small Mobile (360px and below) */
+@media screen and (max-width: 360px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .nav-brand h1 {
+        font-size: 1.3rem;
+    }
+
+    .menu-category {
+        padding: 15px;
+    }
+
+    .review-card {
+        padding: 15px;
+    }
+}
+
+/* Large Desktop (1440px and above) */
+@media screen and (min-width: 1440px) {
+    .container {
+        max-width: 1320px;
+    }
+
+    .section-title {
+        font-size: 3rem;
+    }
+
+    .hero-title {
+        font-size: 4.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.8rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .navbar,
+    .hero,
+    .gallery,
+    .lightbox,
+    .back-to-top,
+    .scroll-indicator,
+    .nav-toggle {
+        display: none !important;
+    }
+
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+        color: #000;
+    }
+
+    .section {
+        page-break-inside: avoid;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+
+    .btn {
+        border: 1px solid #000;
+    }
+}
+
+/* Accessibility - Reduce Motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    :root {
+        --primary-color: #1a3a1b;
+        --text-dark: #000;
+        --bg-white: #fff;
+        --border-color: #000;
+    }
+
+    .btn {
+        border-width: 3px;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    /* Optional: Add dark mode styles if desired
+    :root {
+        --bg-white: #1a1a1a;
+        --bg-light: #2d2d2d;
+        --text-dark: #f0f0f0;
+        --text-light: #c0c0c0;
+    }
+    */
+}

@@ -1,0 +1,25 @@
+{
+  "drinks": {
+    "beer": [
+      {"name": "Berliner Pilsner", "size": "0.5L", "price": "€4.50"},
+      {"name": "Craft Beer Selection", "size": "0.33L", "price": "€5.00"},
+      {"name": "Wheat Beer", "size": "0.5L", "price": "€4.80"}
+    ],
+    "cocktails": [
+      {"name": "Palme Special", "description": "Hauskreation", "price": "€8.50"},
+      {"name": "Mojito", "description": "Classic cocktail", "price": "€7.50"},
+      {"name": "Aperol Spritz", "description": "Italian favorite", "price": "€7.00"}
+    ],
+    "softDrinks": [
+      {"name": "Cola / Fanta / Sprite", "size": "0.4L", "price": "€3.50"},
+      {"name": "Apfelsaftschorle", "size": "0.4L", "price": "€3.50"},
+      {"name": "Mineralwasser", "size": "0.5L", "price": "€3.00"}
+    ]
+  },
+  "snacks": [
+    {"name": "Flammkuchen", "description": "Traditional Alsatian pizza", "price": "€8.50"},
+    {"name": "Currywurst mit Pommes", "description": "Berlin classic", "price": "€7.50"},
+    {"name": "Käseplatte", "description": "Cheese platter", "price": "€9.00"},
+    {"name": "Nachos", "description": "Mit Käse und Salsa", "price": "€6.50"}
+  ]
+}
